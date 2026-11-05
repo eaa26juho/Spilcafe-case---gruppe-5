@@ -48,10 +48,10 @@ function filtrerProdukter() {
     if (sorterEfter && sorterEfter === "popularer") {
         filteredProducts.sort((a, b) => b.rating - a.rating);
     }
-    if (sorterEfter && sorterEfter === "favoritter-stigende") {
+    if (sorterEfter && sorterEfter === "minutter-stigende") {
         filteredProducts.sort((a, b) => a.price - b.price);
     }
-    if (sorterEfter && sorterEfter === "favoritter-faldende") {
+    if (sorterEfter && sorterEfter === "minutter-faldende") {
         filteredProducts.sort((a, b) => b.price - a.price);
     }
     //sender filtrering til kort her//

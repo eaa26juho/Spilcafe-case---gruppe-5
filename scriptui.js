@@ -29,7 +29,7 @@ function displayProducts(productsToDisplay) {
                 <h3 class="product-title">${product.title}</h3>
                 <p class="product-description">${product.description}</p>
                 <div class="product-meta">
-                    <span class="product-price">${product.price.toLocaleString('da-DK')} DKK</span>
+                    <span class="product-minutter">${product.minutter} minutter</span>
                     <span class="product-category">${product.category}</span>
                 </div>
                 <div class="product-rating">${ratingStars}</div>
@@ -50,7 +50,7 @@ function showProductDialog(productId) {
     document.getElementById('dialog-image').alt = product.title;
     document.getElementById('dialog-title').textContent = product.title;
     document.getElementById('dialog-description').textContent = product.description;
-    document.getElementById('dialog-price').textContent = product.price.toLocaleString('da-DK') + ' DKK';
+    document.getElementById('dialog-minutter').textContent = product.minutter + ' minutter';
     document.getElementById('dialog-category').textContent = product.category;
 
     const ratingStars = '★'.repeat(product.rating) + '☆'.repeat(5 - product.rating);
