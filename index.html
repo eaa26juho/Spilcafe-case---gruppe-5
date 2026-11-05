@@ -30,8 +30,8 @@
                     <select id="predefined-search" class="predefined-select">
                         <option value="">---- Sorter efter ----</option>
                         <option value="populaere">Mest populære</option>
-                        <option value="pris-stigende">Pris: Lav til høj</option>
-                        <option value="pris-faldende">Pris: Høj til lav</option>
+                        <option value="favoritter-stigende">Favoritter: Lav til høj</option>
+                        <option value="favoritter-faldende">Favoritter: Høj til lav</option>
                     </select>
 
                     <button id="filter-toggle" class="filter-button">
@@ -51,26 +51,29 @@
                             <label class="filter-label">Kategori</label>
                             <div class="checkbox-group">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="category" value="elektronik"> Elektronik
+                                    <input type="checkbox" name="category" value="Go til to"> Spil
                                 </label>
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="category" value="tøj"> Tøj
+                                    <input type="checkbox" name="category" value="Selskabspil"> Fællesspil
                                 </label>
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="category" value="møbler"> Møbler
+                                    <input type="checkbox" name="category" value="Vennespil"> spil
                                 </label>
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="category" value="bøger"> Bøger
+                                    <input type="checkbox" name="category" value="Kortspil"> Kort
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="category" value="Brætspil"> 
                                 </label>
                             </div>
                         </div>
 
                         <div class="filter-group">
-                            <label class="filter-label">Pris interval</label>
+                            <label class="filter-label">Favoritter</label>
                             <div class="price-range">
-                                <input type="number" id="min-price" placeholder="Min pris" class="price-input">
+                                <input type="number" id="min-price" placeholder="Min favorit" class="price-input">
                                 <span class="price-separator">-</span>
-                                <input type="number" id="max-price" placeholder="Max pris" class="price-input">
+                                <input type="number" id="max-price" placeholder="Max favorit" class="price-input">
                             </div>
                         </div>
 
