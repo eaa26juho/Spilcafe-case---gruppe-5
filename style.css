@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 :root {
+    --bg_kortspil: #F6FAFB;
     --bg_lyseblaa: #E0F0F4;
     --søgefelt: #E8F8FD;
     --hvid: #FFFFFF;
@@ -14,7 +15,7 @@
     --undertitel_blå: #74919F;
     --spilkort_ikoner: #779199;
     --spilhjørnet: #002A42;
-    --header_ikoner: #000000;
+    --sort: #000000;
     --spilnavn: #002A42;
     --stjerner_bg: #FBEA9A;
     --light-gray: #ecf0f1;
@@ -309,6 +310,7 @@ header h1 {
     opacity: 1;
     visibility: visible;
 }
+
 /* Produkter container */
 .products-container {
     display: grid;
@@ -318,8 +320,7 @@ header h1 {
 }
 /* Produkt kort */
 .product-card {
-    background-color: var(--søgefelt);
-    border-radius: var(--border-radius);
+    background-color: var(--bg_kortspil); /* spilkort baggrund */
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -336,12 +337,30 @@ header h1 {
 }
 .product-info {
     padding: 20px;
+    color: var(--sort); /* titel og antal minutter */
 }
 .product-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 10px;
     color: var(--primary-color);
+}
+/* Informationer i 3 kolonner om kategori, tid, antal personer  */
+.game-tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 2px 0 15px; /* afstanden ml. spilnavn og 3 kolonner */
+}
+
+.tag {
+    border: 1px solid black;
+    border-radius: 8px; /* afrundede kanter til de 3 kolonner */
+    padding: 8px 8px; /* padding afstanden for teksten inde i de 3 kolonner */
+    background: none;
+    font-family: 'jomhuria', sans-serif;
+    font-size: 1rem; /* tekststørrelsen inde i de 3 kolonner */
 }
 .product-description {
     color: var(--dark-gray);

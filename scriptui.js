@@ -21,6 +21,17 @@ function displayProducts(productsToDisplay) {
             <img src="${product.image}" alt="${product.title}" class="product-image">
             <div class="product-info">
                 <h3 class="product-title">${product.title}</h3>
+
+
+
+        <div class="game-tags">
+            <span class="tag">🎲 Quiz spil</span>
+            <span class="tag">🕒 45 min</span>
+            <span class="tag">👥 2-8 personer</span>
+        </div>
+
+
+
                 <p class="product-description">${product.description}</p>
                 <div class="product-meta">
                     <span class="product-minutter">${product.minutter} minutter</span>
