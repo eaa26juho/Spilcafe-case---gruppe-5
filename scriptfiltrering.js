@@ -14,8 +14,8 @@ function filtrerProdukter() {
     //-------Håndtering af filtreringspanel------//
     const categories = Array.from(document.querySelectorAll('input[name="catagory"]:checked')).map(cb => cb.value);
     const colors = Array.from(document.querySelectorAll('input[name="color"]:checked')).map(cb => cb.value);
-    const minPrice = parseFloat(document.getElementById('min-price').value);
-    const maxPrice = parseFloat(document.getElementById('max-price').value);
+    const minMinutter = parseFloat(document.getElementById('min-minutter').value);
+    const maxMinutter = parseFloat(document.getElementById('max-minutter').value);
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
     //-------Filtrér på kategori, farve, pris, rating------//
     if (categories.length > 0) {
@@ -26,12 +26,12 @@ function filtrerProdukter() {
         filteredProducts = filteredProducts.filter(product => colors.includes(product.color)
         );
     }
-    if (!isNaN(maxPrice)) {
-        filteredProducts = filteredProducts.filter(product => product.price <= minPrice
+    if (!isNaN(minMinutter)) {
+        filteredProducts = filteredProducts.filter(product => product.minutter >= minMinutter
         );
     }
-    if (!isNaN(maxPrice)) {
-        filteredProducts = filteredProducts.filter(product => product.price <= maxPrice
+    if (!isNaN(maxMinutter)) {
+        filteredProducts = filteredProducts.filter(product => product.minutter <= maxMinutter
         );
     }
     if (rating !== null) {
@@ -44,10 +44,10 @@ function filtrerProdukter() {
         filteredProducts.sort((a, b) => b.rating - a.rating);
     }
     if (sorterEfter && sorterEfter === "minutter-stigende") {
-        filteredProducts.sort((a, b) => a.price - b.price);
+        filteredProducts.sort((a, b) => a.minutter - b.minutter);
     }
     if (sorterEfter && sorterEfter === "minutter-faldende") {
-        filteredProducts.sort((a, b) => b.price - a.price);
+        filteredProducts.sort((a, b) => b.minutter - a.minutter);
     }
     //sender filtrering til kort her//
     displayProducts(filteredProducts);
