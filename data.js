@@ -6,7 +6,7 @@ const products = [
         title: "Partners",
         description: "Et strategisk brætspil, hvor samarbejde og taktik går hånd i hånd. Spil sammen med din makker, få alle dine brikker sikkert i mål, og prøv at læse både modstandernes og makkerens næste træk. Perfekt til spillere, der nyder klassisk strategi med et socialt twist.",
         minutter: 60, /*Dette er de rigtige antal minutter*/
-        category: "Selskabspil",
+        category: "Brætspil",
         rating: 5,
         color: "sort",
         image: "billeder_spiloversigt/spil_partners.svg"
