@@ -50,7 +50,7 @@ function displayProducts(productsToDisplay) {
                     <span class="product-category">${product.category}</span>
                 </div>
                 <div class="product-rating">${ratingStars}</div>
-                <button class="product-button" onclick="showProductDialog(${product.id})">Vis</button>
+                <button class="product-button" onclick="showProductDialog(${product.id})">Vis mere</button>
             </div>
         `;
         productsContainer.appendChild(productCard);

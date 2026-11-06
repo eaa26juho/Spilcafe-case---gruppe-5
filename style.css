@@ -7,7 +7,7 @@
 :root {
     --bg_kortspil: #F6FAFB;
     --bg_lyseblaa: #E0F0F4;
-    --søgefelt: #E8F8FD;
+    --lyseblaa: #E8F8FD;
     --hvid: #FFFFFF;
     --knækkethvid_: #F7F7F7;
     --læs_mere_knap: #C5DBE2;
@@ -396,14 +396,15 @@ header h1 {
 .product-button {
     width: 100%;
     padding: 10px;
-    background-color: var(--secondary-color);
-    color: var(--søgefelt);
+    background-color: var(--lyseblaa);
+    color: var(--sort); /* farveskritvning for "vis mere" */
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: var(--transition);
     font-weight: 600;
 }
+/* Spilkort "læs-mere" knap */
 .product-button:hover {
     background-color: #2980b9;
 }
