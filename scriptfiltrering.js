@@ -17,7 +17,7 @@ function filtrerProdukter() {
     const minMinutter = parseFloat(document.getElementById('min-minutter').value);
     const maxMinutter = parseFloat(document.getElementById('max-minutter').value);
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
-    //-------Filtrér på kategori, farve, pris, rating------//
+    //-------Filtrér på kategori, farve, minutter, rating------//
     if (categories.length > 0) {
         filteredProducts = filteredProducts.filter(product => categories.includes(product.category)
         );
