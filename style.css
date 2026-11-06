@@ -226,13 +226,13 @@ header h1 {
     height: 18px;
     cursor: pointer;
 }
-/* Price range */
-.price-range {
+/* Minutter range */
+.minutter-range {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.price-input {
+.minutter-input {
     padding: 10px 15px;
     border: 1px solid var(--læs_mere_knap);
     border-radius: 20px;
@@ -240,11 +240,12 @@ header h1 {
     width: 100%;
     transition: var(--transition);
 }
-.price-input:focus {
-    outline: none;
-    border-color: var(--secondary-color);
+.minutter-separator {
+    color: var(--dark-gray);
+    font-weight: bold;
 }
-.price-separator {
+
+.minutter-separator {
     color: var(--dark-gray);
     font-weight: bold;
 }
