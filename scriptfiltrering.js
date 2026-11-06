@@ -1,12 +1,9 @@
 // Her skal vi skrive vores søge-, sortering- og filtreringskoder
-
 function filtrerProdukter() {
     // Lokal vaiabel som er en kopi af en produktlisten.
     let filteredProducts = [...products];
-
     //-------Håndtering af søgefelt (foreningsmængde)------//
     const searchText = document.getElementById("search-input").value.toLowerCase().trim();
-
     if (searchText) {
         filteredProducts = filteredProducts.filter(product =>
             product.title.toLowerCase().includes(searchText) ||
@@ -14,14 +11,12 @@ function filtrerProdukter() {
             product.category.toLowerCase().includes(searchText)
         );
     }
-
     //-------Håndtering af filtreringspanel------//
     const categories = Array.from(document.querySelectorAll('input[name="catagory"]:checked')).map(cb => cb.value);
     const colors = Array.from(document.querySelectorAll('input[name="color"]:checked')).map(cb => cb.value);
     const minPrice = parseFloat(document.getElementById('min-price').value);
     const maxPrice = parseFloat(document.getElementById('max-price').value);
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
-
     //-------Filtrér på kategori, farve, pris, rating------//
     if (categories.length > 0) {
         filteredProducts = filteredProducts.filter(product => categories.includes(product.category)

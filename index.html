@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="da">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/svg+xml" href="favicon/favicon_terning.svg">
-
-
     <title>Spilhjørnet</title>
     <link rel="stylesheet" href="style.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
 </head>
-
-
-
-
 <body>
     <div class="container">
         <header>
             <img src="logo/logo_terning.svg" alt="SpilCafe logo" class="logo">
-
             <h1>Spiloversigt</h1>
-
             <img src="ikoner/terninge_design.svg" alt="Dekorativ række af terninger" class="dice-divider" </header>
-
             <main>
                 <div class="search-container">
                     <input type="search" id="search-input" placeholder="Søg efter spil..." class="search-input">
-
                     <button class="recommended-button">
                         <img src="ikoner//ai_knap.svg" alt="Anbefalet ikon">
                         Anbefalet
                     </button>
-
-
                     <select id="predefined-search" class="predefined-select">
                         <option value="">Sorter efter</option>
                         <option value="minutter-stigende">EAA's favoritter: Lav til høj</option>
                         <option value="minutter-faldende">EAA's favoritter: Høj til lav</option>
                     </select>
-
                     <button id="filter-toggle" class="filter-button">
                         <img src="ikoner/filter_knap.svg" alt="" Filter ikon">
                         <span>Filtrer</span>
                     </button>
                 </div>
-
                 <div id="filter-panel" class="filter-panel">
                     <div class="filter-header">
                         <h2>Filtrer Produkter</h2>
                         <button id="close-filter" class="close-button">&times;</button>
                     </div>
-
                     <div class="filter-content">
                         <div class="filter-group">
                             <label class="filter-label">Kategori</label>
@@ -75,68 +57,48 @@
                                 </label>
                             </div>
                         </div>
-
-
                         <div class="filter-group">
                             <label class="filter-label">Antal spillere</label>
                             <div class="checkbox-group">
-
                                 <label class="checkbox-label">
                                     <input type="checkbox" name="players" value="2"> 2 spillere
                                 </label>
-
                                 <label class="checkbox-label">
                                     <input type="checkbox" name="players" value="3"> 3 spillere
                                 </label>
-
                                 <label class="checkbox-label">
                                     <input type="checkbox" name="players" value="4"> 4 spillere
                                 </label>
-
                                 <label class="checkbox-label">
                                     <input type="checkbox" name="players" value="5"> 5+ spillere
                                 </label>
-
                                 <div class="filter-group">
                                     <label class="filter-label">Spilletid</label>
                                     <div class="checkbox-group">
-
                                         <label class="checkbox-label">
                                             <input type="checkbox" name="playtime" value="0-30">
                                             0-15 min
                                         </label>
-
                                         <label class="checkbox-label">
                                             <input type="checkbox" name="playtime" value="30-60">
                                             30 min
                                         </label>
-
                                         <label class="checkbox-label">
                                             <input type="checkbox" name="playtime" value="60-90">
                                             45 min
                                         </label>
-
                                         <label class="checkbox-label">
                                             <input type="checkbox" name="playtime" value="90-120">
                                             60 min
                                         </label>
-
                                         <label class="checkbox-label">
                                             <input type="checkbox" name="playtime" value="120+">
                                             Over 60+ min
                                         </label>
-
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
-
-
-
-
-
                         <!---   SLETTES-->
                         <div class="filter-group">
                             <label class="filter-label">Favoritter</label>
@@ -169,7 +131,6 @@
                                 </label>
                             </div>
                         </div>
-
                         <div class="filter-group">
                             <label class="filter-label">Farve</label>
                             <div class="color-group">
@@ -191,16 +152,13 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="filter-footer">
                         <button id="apply-filters" class="apply-button">Vis Produkter</button>
                     </div>
                 </div>
-
                 <div id="products-container" class="products-container">
                 </div>
             </main>
-
             <footer>
                 <div class="footer-information">
                     <h3>Følg os på</h3>
@@ -215,7 +173,6 @@
                 <p>&copy; Spilhjørnet ApS 2026 All rights reserved</p>
             </footer>
     </div>
-
     <dialog id="product-dialog">
         <article class="dialog-content">
             <img id="dialog-image" src="" alt="" class="product-image">
@@ -231,12 +188,10 @@
             </menu>
         </article>
     </dialog>
-
     <div id="overlay" class="overlay"></div>
     <script src="data.js"></script>
     <script src="scriptui.js"></script>
     <script src="scriptfiltrering.js"></script>
     <script src="tester.js"></script>
 </body>
-
 </html>

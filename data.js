@@ -25,11 +25,11 @@ const products = [
         id: 3,
         title: "Matador",
         description: "100% bomuld T-shirt i forskellige farver og størrelser.",
-        minutter: 90 ,
+        minutter: 90,
         category: "tøj",
         rating: 4,
         color: "blå",
-        image: "https://via.placeholder.com/300x200?text=Bomuld+T-Shirt"
+        image: "billeder_spiloversigt/spil_matador.svg"
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Designerstol"
+        image: "billeder_spiloversigt/spil_sequence.svg"
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const products = [
         category: "bøger",
         rating: 4,
         color: "sort",
-        image: "https://via.placeholder.com/300x200?text=JavaScript+Bog"
+        image: "billeder_spiloversigt/spil_alias.svg"
     },
     {
         id: 6,
@@ -59,17 +59,17 @@ const products = [
         category: "elektronik",
         rating: 5,
         color: "sort",
-        image: "https://via.placeholder.com/300x200?text=Smartwatch+Series+7"
+        image: "billeder_spiloversigt/spil_spillekort.svg"
     },
     {
         id: 7,
         title: "Terninger",
         description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
-        minutter: 90 ,
+        minutter: 90,
         category: "tøj",
         rating: 3,
         color: "blå",
-        image: "https://via.placeholder.com/300x200?text=Jeans+Bukser"
+        image: "billeder_spiloversigt/spil_terninger.svg"
     },
     {
         id: 8,
@@ -79,9 +79,9 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
+        image: "billeder_spiloversigt/spil_uno.svg"
     },
-        {
+    {
         id: 9,
         title: "Ligretto",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -89,8 +89,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_ligretto.svg"
+    }, {
         id: 10,
         title: "Flip 7",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -98,8 +98,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_flip_7.svg"
+    }, {
         id: 11,
         title: "The mind",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -107,8 +107,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_the_mind.svg"
+    }, {
         id: 12,
         title: "Trivial Pursuit",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -116,8 +116,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_trivial_pursuit.svg"
+    }, {
         id: 13,
         title: "Azul",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -125,8 +125,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_azul.svg"
+    }, {
         id: 14,
         title: "Det dårlige selskab",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -134,8 +134,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },   
+        image: "billeder_spiloversigt/spil_det_daarlige_selskab.svg"
+    },
     {
         id: 15,
         title: "Hitster",
@@ -144,9 +144,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
+        image: "billeder_spiloversigt/spil_hitster.svg"
     },
-        
     {
         id: 16,
         title: "Hint",
@@ -155,8 +154,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    {
+        image: "billeder_spiloversigt/spil_hint.svg"
+    }, {
         id: 17,
         title: "Codenames",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -164,8 +163,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    
+        image: "billeder_spiloversigt/spil_codenames.svg"
+    },
     {
         id: 18,
         title: "Tegn og gæt",
@@ -174,21 +173,19 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    
+        image: "billeder_spiloversigt/spil_tegn_og_gaet.svg"
+    },
     {
         id: 19,
         title: "Risk",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
-        minutter: 90 ,
+        minutter: 90,
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
+        image: "billeder_spiloversigt/spil_risk.svg"
     },
     {
-
-
         id: 20,
         title: "Catan",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
@@ -196,8 +193,8 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    },    
+        image: "billeder_spiloversigt/spil_catan.svg"
+    },
     {
         id: 21,
         title: "Skak",
@@ -206,9 +203,6 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
+        image: "billeder_spiloversigt/spil_skak.svg"
     }
-
-
-
 ];
