@@ -166,7 +166,7 @@ header h1 {
     color: var(--søgefelt);
 }
 .filter-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .close-button {
     background: none;
@@ -197,7 +197,7 @@ header h1 {
     font-weight: 600;
     margin-bottom: 10px;
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 /* Checkbox groups */
 .checkbox-group,
@@ -236,7 +236,7 @@ header h1 {
     padding: 10px 15px;
     border: 1px solid var(--læs_mere_knap);
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 100%;
     transition: var(--transition);
 }
