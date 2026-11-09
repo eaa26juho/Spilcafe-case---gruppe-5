@@ -25,22 +25,22 @@ function displayProducts(productsToDisplay) {
                 <h3 class="product-title">${product.title}</h3>
 
                 
-        <div class="game-tags">
-    <span class="tag">
+   <div class="game-tags">
+     <span class="tag">
         <img src="spilkort_ui/kategori_ikon.svg" alt="">
-        Quiz spil
-    </span>
+        ${product.category}
+     </span>
 
-    <span class="tag">
+     <span class="tag">
         <img src="spilkort_ui/tid_ikon.svg" alt="">
-        45 min
-    </span>
+        ${product.minutter} min
+     </span>
 
-    <span class="tag">
+     <span class="tag">
         <img src="spilkort_ui/antal_spillere_ikon.svg" alt="">
-        2-8 personer
-    </span>
-        </div>
+        ${product.players}
+     </span>
+    </div>
 
 
 

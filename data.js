@@ -7,7 +7,8 @@ const products = [
         description: "Et strategisk brætspil, hvor samarbejde og taktik går hånd i hånd. Spil sammen med din makker, få alle dine brikker sikkert i mål, og prøv at læse både modstandernes og makkerens næste træk. Perfekt til spillere, der nyder klassisk strategi med et socialt twist.",
         minutter: 60, /*Dette er de rigtige antal minutter*/
         category: "Brætspil",
-        rating: 5,
+        players: "4 personer",
+        rating: 4,
         color: "sort",
         image: "billeder_spiloversigt/spil_partners.svg"
     },
@@ -17,6 +18,7 @@ const products = [
         description: "Noise-cancelling trådløse hovedtelefoner med 30 timers batteri.",
         minutter: 45,
         category: "Quizspil",
+        players: "2-8 personer",
         rating: 4,
         color: "hvid",
         image: "billeder_spiloversigt/spil_bezzerwizzer.svg"
@@ -27,6 +29,7 @@ const products = [
         description: "100% bomuld T-shirt i forskellige farver og størrelser.",
         minutter: 90,
         category: "Brætspil",
+        players: "2-6 personer",
         rating: 4,
         color: "blå",
         image: "billeder_spiloversigt/spil_matador.svg"
@@ -37,6 +40,7 @@ const products = [
         description: "Moderne designerstol i ægte læder, perfekt til stuen.",
         minutter: 30,
         category: "Brætspil",
+        players: "2-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_sequence.svg"
@@ -47,6 +51,7 @@ const products = [
         description: "Lær JavaScript på 30 dage - komplet guide for begyndere.",
         minutter: 45,
         category: "Selskabsspil",
+        players: "2-8 personer",
         rating: 4,
         color: "sort",
         image: "billeder_spiloversigt/spil_alias.svg"
@@ -57,6 +62,7 @@ const products = [
         description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
         minutter: 90,
         category: "Kortspil",
+        players: "2-8 personer",
         rating: 5,
         color: "sort",
         image: "billeder_spiloversigt/spil_spillekort.svg"
@@ -67,6 +73,7 @@ const products = [
         description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
         minutter: 90,
         category: "Selskabsspil",
+        players: "2-8 personer",
         rating: 3,
         color: "blå",
         image: "billeder_spiloversigt/spil_terninger.svg"
@@ -77,6 +84,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Kortspil",
+        players: "2-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_uno.svg"
@@ -87,6 +95,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 15,
         category: "Kortspil",
+        players: "2-4 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_ligretto.svg"
@@ -96,6 +105,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 20,
         category: "Kortspil",
+        players: "2-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_flip_7.svg"
@@ -105,6 +115,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 20,
         category: "Kortspil",
+        players: "2-6 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_the_mind.svg"
@@ -114,6 +125,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 60,
         category: "Quizspil",
+        players: "2-6 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_trivial_pursuit.svg"
@@ -123,6 +135,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Strategispil",
+        players: "2-4 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_azul.svg"
@@ -132,6 +145,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 45,
         category: "Selskabsspil",
+        players: "3-6 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_det_daarlige_selskab.svg"
@@ -142,6 +156,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Quizspil",
+        players: "2-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_hitster.svg"
@@ -152,6 +167,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 45,
         category: "Selskabsspil",
+        players: "4-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_hint.svg"
@@ -161,6 +177,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 15,
         category: "Selskabsspil",
+        players: "4-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_codenames.svg"
@@ -171,6 +188,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 45,
         category: "Selskabsspil",
+        players: "4-8 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_tegn_og_gaet.svg"
@@ -181,6 +199,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 90,
         category: "Strategispil",
+        players: "2-6 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_risk.svg"
@@ -191,6 +210,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 60,
         category: "Strategispil",
+        players: "3-4 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_catan.svg"
@@ -201,6 +221,7 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Strategispil",
+        players: "2 personer",
         rating: 5,
         color: "brun",
         image: "billeder_spiloversigt/spil_skak.svg"
