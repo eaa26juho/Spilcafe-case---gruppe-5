@@ -33,7 +33,7 @@ function displayProducts(productsToDisplay) {
 
      <span class="tag">
         <img src="spilkort_ui/tid_ikon.svg" alt="">
-        ${product.minutter} min
+        ${product.minute} min
      </span>
 
      <span class="tag">
@@ -46,7 +46,7 @@ function displayProducts(productsToDisplay) {
 
                 <p class="product-description">${product.description}</p>
                 <div class="product-meta">
-                    <span class="product-minutter">${product.minutter} minutter</span>
+                    <span class="product-minute">${product.minute} minute</span>
                     <span class="product-category">${product.category}</span>
                 </div>
                 <div class="product-rating">${ratingStars}</div>
@@ -65,8 +65,8 @@ function showProductDialog(productId) {
     document.getElementById("dialog-title").textContent = product.title;
     document.getElementById("dialog-description").textContent =
         product.description;
-    document.getElementById("dialog-minutter").textContent =
-        product.minutter + " minutter";
+    document.getElementById("dialog-minute").textContent =
+        product.minute + " minute";
     document.getElementById("dialog-category").textContent = product.category;
     const ratingStars =
         "★".repeat(product.rating) + "☆".repeat(5 - product.rating);
