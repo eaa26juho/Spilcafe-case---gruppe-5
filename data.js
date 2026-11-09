@@ -17,7 +17,7 @@ const products = [
     {
         id: 2,
         title: "Bezzerwizzer",
-        description: "Noise-cancelling trådløse hovedtelefoner med 30 timers batteri.",
+        description: "Bezzerwizzer er et sjovt quizspil, hvor man dyster mod hinanden i forskellige kategorier og tester sin viden.",
         minutter: 45,
         category: "Quizspil",
         players: "2-8 personer",
@@ -28,7 +28,7 @@ const products = [
     {
         id: 3,
         title: "Matador",
-        description: "100% bomuld T-shirt i forskellige farver og størrelser.",
+        description: "Matador er et klassisk strategisk brætspil, hvor man køber grunde, bygger huse og hoteller og prøver at få de andre spillere til at gå fallit.",
         minutter: 90,
         category: "Brætspil",
         players: "2-6 personer",
@@ -39,7 +39,7 @@ const products = [
     {
         id: 4,
         title: "Sequence",
-        description: "Moderne designerstol i ægte læder, perfekt til stuen.",
+        description: "Sequence er et sjovt strategisk brætspil, hvor man spiller kort og placerer brikker på spillepladen for at få fem på stribe.",
         minutter: 30,
         category: "Brætspil",
         players: "2-8 personer",
@@ -51,7 +51,7 @@ const products = [
     {
         id: 5,
         title: "Alias",
-        description: "Lær JavaScript på 30 dage - komplet guide for begyndere.",
+        description: "Alias er et sjovt og tempofyldt holdspil, hvor man skal forklare så mange ord som muligt uden at sige selve ordene, mens holdkammeraterne gætter med.",
         minutter: 45,
         category: "Selskabsspil",
         players: "2-8 personer",
@@ -62,7 +62,7 @@ const products = [
     {
         id: 6,
         title: "Spillekort",
-        description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
+        description: "Spillekort er et klassisk kortspil, hvor man kan spille mange forskellige spil med venner og familie, fra simple kortlege til strategiske spil.",
         minutter: 90,
         category: "Kortspil",
         players: "2-8 personer",
@@ -73,7 +73,7 @@ const products = [
     {
         id: 7,
         title: "Terninger",
-        description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
+        description: "Terninger er et klassisk spiltilbehør, der kan bruges til mange forskellige spil, hvor man slår med terningerne og lader heldet afgøre næste træk.",
         minutter: 90,
         category: "Selskabsspil",
         players: "2-8 personer",
@@ -85,7 +85,7 @@ const products = [
     {
         id: 8,
         title: "UNO",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "UNO er et sjovt kortspil, hvor man skal komme af med sine kort ved at matche farver og tal, og være den første til at slippe af med alle sine kort.",
         minutter: 30,
         category: "Kortspil",
         players: "2-8 personer",
@@ -97,7 +97,7 @@ const products = [
     {
         id: 9,
         title: "Ligretto",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Ligretto er et hurtigt og underholdende kortspil, hvor alle spiller på samme tid og forsøger at komme af med deres kort hurtigst muligt ved at lægge dem i nummerorden.",
         minutter: 15,
         category: "Kortspil",
         players: "2-4 personer",
@@ -108,7 +108,7 @@ const products = [
     }, {
         id: 10,
         title: "Flip 7",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Flip 7 er et sjovt og nervepirrende kortspil, hvor man trækker kort og forsøger at samle forskellige tal uden at trække det samme tal to gange.",
         minutter: 20,
         category: "Kortspil",
         players: "2-8 personer",
@@ -118,7 +118,7 @@ const products = [
     }, {
         id: 11,
         title: "The mind",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "The Mind er et anderledes og samarbejdsbaseret kortspil, hvor man uden at tale sammen skal lægge sine kort i den rigtige rækkefølge fra lavest til højest.",
         minutter: 20,
         category: "Kortspil",
         players: "2-6 personer",
@@ -128,7 +128,7 @@ const products = [
     }, {
         id: 12,
         title: "Trivial Pursuit",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Trivial Pursuit er et underholdende quizspil, hvor man tester sin almenviden i forskellige kategorier og samler brikker ved at svare rigtigt på spørgsmål.",
         minutter: 60,
         category: "Quizspil",
         players: "2-6 personer",
@@ -138,7 +138,7 @@ const products = [
     }, {
         id: 13,
         title: "Azul",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Azul er et strategisk brætspil, hvor man samler farverige fliser og placerer dem på sit spillebræt for at skabe flotte mønstre og samle flest point.",
         minutter: 30,
         category: "Strategispil",
         players: "2-4 personer",
@@ -148,7 +148,7 @@ const products = [
     }, {
         id: 14,
         title: "Det dårlige selskab",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Det Dårlige Selskab er et humoristisk selskabsspil, hvor man skal færdiggøre sætninger med sjove, skæve og ofte upassende svar.",
         minutter: 45,
         category: "Selskabsspil",
         players: "3-6 personer",
@@ -159,7 +159,7 @@ const products = [
     {
         id: 15,
         title: "Hitster",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Hitster er et sjovt musikspil, hvor man skal gætte, hvornår forskellige sange er udgivet, og placere dem i den rigtige rækkefølge på en tidslinje.",
         minutter: 30,
         category: "Quizspil",
         players: "2-8 personer",
@@ -170,7 +170,7 @@ const products = [
     {
         id: 16,
         title: "Hint",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Hint er et sjovt tegne- og gættespil, hvor man skal tegne, mime eller give ledetråde, så ens hold kan gætte de rigtige ord.",
         minutter: 45,
         category: "Selskabsspil",
         players: "4-8 personer",
@@ -180,7 +180,7 @@ const products = [
     }, {
         id: 17,
         title: "Codenames",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Codenames er et sjovt holdspil, hvor man giver hints med ét ord for at få sit hold til at gætte de rigtige ord på spillepladen uden at ramme modstanderens agenter.",
         minutter: 15,
         category: "Selskabsspil",
         players: "4-8 personer",
@@ -190,8 +190,8 @@ const products = [
     },
     {
         id: 18,
-        title: "Tegn og gæt",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        title: "Tegn & Gæt",
+        description: "Tegn & Gæt er et sjovt selskabsspil, hvor man skal tegne forskellige ord og få sine holdkammerater til at gætte, hvad man forestiller.",
         minutter: 45,
         category: "Selskabsspil",
         players: "4-8 personer",
@@ -202,7 +202,7 @@ const products = [
     {
         id: 19,
         title: "Risk",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Risk er et strategisk brætspil, hvor man kæmper om verdensherredømmet ved at opbygge hære, erobre territorier og besejre sine modstandere.",
         minutter: 90,
         category: "Strategispil",
         players: "2-6 personer",
@@ -213,7 +213,7 @@ const products = [
     {
         id: 20,
         title: "Catan",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Catan er et strategisk brætspil, hvor man samler ressourcer, bygger veje og byer og konkurrerer om at udvikle den bedste bosættelse.",
         minutter: 60,
         category: "Strategispil",
         players: "3-4 personer",
@@ -224,7 +224,7 @@ const products = [
     {
         id: 21,
         title: "Skak",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Skak er et klassisk strategisk brætspil for to personer, hvor man med forskellige brikker forsøger at sætte modstanderens konge skakmat.",
         minutter: 30,
         category: "Strategispil",
         players: "2 personer",
