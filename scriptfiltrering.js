@@ -14,36 +14,36 @@ function filtrerProdukter() {
     //-------Håndtering af filtreringspanel------//
     const categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb => cb.value);
     const players = Array.from(document.querySelectorAll('input[name="player"]:checked')).map(cb => cb.value);
-    const minutes = Array.from(document.querySelectorAll('input[name="minute"]:checked')).map(cb => cb.value);
-    const minMinute = parseFloat(document.getElementById('min-minute').value);
-    const maxMinute = parseFloat(document.getElementById('max-minute').value);
+    const minutter = Array.from(document.querySelectorAll('input[name="minutter"]:checked')).map(cb => cb.value);
+    const minMinutter = parseFloat(document.getElementById('min-minutter').value);
+    const maxMinutter = parseFloat(document.getElementById('max-minutter').value);
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
     //-------Filtrér på kategori, farve, minutter, rating------//
     if (categories.length > 0) {
         filteredProducts = filteredProducts.filter(product => categories.includes(product.category)
         );
     }
-    if (minutes.length > 0) {
+    if (minutter.length > 0) {
     filteredProducts = filteredProducts.filter(product => {
-        return minutes.some(minute => {
-            if (minute === "15") return product.minute <= 15;
-            if (minute === "30") return product.minute === 30;
-            if (minute === "45") return product.minute === 45;
-            if (minute === "60") return product.minute === 60;
-            if (minute === "over60") return product.minute > 60;
+        return minutter.some(minutter => {
+            if (minutter === "15") return product.minutter <= 15;
+            if (minutter === "30") return product.minutter === 30;
+            if (minutter === "45") return product.minutter === 45;
+            if (minutter === "60") return product.minutter === 60;
+            if (minutter === "over60") return product.minutter > 60;
         });
     });
-}
+    }
     if (players.length > 0) {
         filteredProducts = filteredProducts.filter(product => players.includes(product.player)
         );
     }
-    if (!isNaN(minMinute)) {
-        filteredProducts = filteredProducts.filter(product => product.minute >= minMinute
+    if (!isNaN(minMinutter)) {
+        filteredProducts = filteredProducts.filter(product => product.minutter >= minMinutter
         );
     }
-    if (!isNaN(maxMinute)) {
-        filteredProducts = filteredProducts.filter(product => product.minute <= maxMinute
+    if (!isNaN(maxMinutter)) {
+        filteredProducts = filteredProducts.filter(product => product.minutter <= maxMinutter
         );
     }
     if (rating !== null) {
@@ -55,11 +55,11 @@ function filtrerProdukter() {
     if (sorterEfter && sorterEfter === "popularer") {
         filteredProducts.sort((a, b) => b.rating - a.rating);
     }
-    if (sorterEfter && sorterEfter === "minute-stigende") {
-        filteredProducts.sort((a, b) => a.minute - b.minute);
+    if (sorterEfter && sorterEfter === "minutter-stigende") {
+        filteredProducts.sort((a, b) => a.minutter - b.minutter);
     }
-    if (sorterEfter && sorterEfter === "minute-faldende") {
-        filteredProducts.sort((a, b) => b.minute - a.minute);
+    if (sorterEfter && sorterEfter === "minutter-faldende") {
+        filteredProducts.sort((a, b) => b.minutter - a.minutter);
     }
     //sender filtrering til kort her//
     displayProducts(filteredProducts);

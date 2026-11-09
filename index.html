@@ -26,8 +26,8 @@
                         <select id="predefined-search" class="predefined-select">
                             <option value="">Sorter efter</option>
                             <option value="populaere">Mest populære</option>
-                            <option value="minute-stigende">Spilletid: Lav til høj</option>
-                            <option value="minute-faldende">Spilletid: Høj til lav</option>
+                            <option value="minutter-stigende">Spilletid: Lav til høj</option>
+                            <option value="minutter-faldende">Spilletid: Høj til lav</option>
                         </select>
                         <button id="filter-toggle" class="filter-button">
                             <img src="ikoner/filter_knap.svg" alt="" Filter ikon">
@@ -66,19 +66,19 @@
                                 <label class="filter-label">Spilletid</label>
                                 <div class="checkbox-group">
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="minute" value="15"> 0-15 min
+                                        <input type="checkbox" name="minutter" value="15"> 0-15 min
                                     </label>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="minute" value="30"> 30 min
+                                        <input type="checkbox" name="minutter" value="30"> 30 min
                                     </label>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="minute" value="45"> 45 min
+                                        <input type="checkbox" name="minutter" value="45"> 45 min
                                     </label>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="minute" value="60"> 60 min
+                                        <input type="checkbox" name="minutter" value="60"> 60 min
                                     </label>
                                     <label class="checkbox-label">
-                                        <input type="checkbox" name="minute" value="over60"> Over 60+ min
+                                        <input type="checkbox" name="minutter" value="over60"> Over 60+ min
                                     </label>
                                 </div>
                             </div>
@@ -87,12 +87,12 @@
                             <!---   SLETTES-->
                             <div class="filter-group">
                                 <label class="filter-label">Spilletid</label>
-                                <div class="minute-range">
-                                    <input type="number" id="min-minute" placeholder="Minimum antal minutter"
-                                        class="minute-input">
-                                    <span class="minute-separator">-</span>
-                                    <input type="number" id="max-minute" placeholder="Max antal minutter"
-                                        class="minute-input">
+                                <div class="minutter-range">
+                                    <input type="number" id="min-minutter" placeholder="Minimum antal minutter"
+                                        class="minutter-input">
+                                    <span class="minutter-separator">-</span>
+                                    <input type="number" id="max-minutter" placeholder="Max antal minutter"
+                                        class="minutter-input">
                                 </div>
                             </div>
 
@@ -172,7 +172,7 @@
                 <h2 id="dialog-title"></h2>
                 <p id="dialog-description"></p>
                 <div class="product-meta">
-                    <span id="dialog-minute" class="product-minute"></span>
+                    <span id="dialog-minutter" class="product-minutter"></span>
                     <span id="dialog-category" class="product-category"></span>
                 </div>
                 <div id="dialog-rating" class="product-rating"></div>

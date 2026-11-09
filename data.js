@@ -5,7 +5,7 @@ const products = [
         id: 1,
         title: "Partners",
         description: "Et strategisk brætspil, hvor samarbejde og taktik går hånd i hånd. Spil sammen med din makker, få alle dine brikker sikkert i mål, og prøv at læse både modstandernes og makkerens næste træk. Perfekt til spillere, der nyder klassisk strategi med et socialt twist.",
-        minute: 60, /*Dette er de rigtige antal minutter*/
+        minutter: 60, /*Dette er de rigtige antal minutter*/
         category: "brætspil",
         rating: 4,
         player: "fire", /*Dett er DE RIGTIGE tal, som er den value, der bruges i java-script og html*/
@@ -16,7 +16,7 @@ const products = [
         id: 2,
         title: "Bezzerwizzer",
         description: "Bezzerwizzer er et sjovt quizspil, hvor man dyster mod hinanden i forskellige kategorier og tester sin viden.",
-        minute: 45,
+        minutter: 45,
         category: "quizspil",
         rating: 4,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -27,7 +27,7 @@ const products = [
         id: 3,
         title: "Matador",
         description: "Matador er et klassisk strategisk brætspil, hvor man køber grunde, bygger huse og hoteller og prøver at få de andre spillere til at gå fallit.",
-        minute: 90,
+        minutter: 90,
         category: "brætspil",
         rating: 4,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -38,7 +38,7 @@ const products = [
         id: 4,
         title: "Sequence",
         description: "Sequence er et sjovt strategisk brætspil, hvor man spiller kort og placerer brikker på spillepladen for at få fem på stribe.",
-        minute: 30,
+        minutter: 30,
         category: "brætspil",
         rating: 4,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -49,7 +49,7 @@ const products = [
         id: 5,
         title: "Alias",
         description: "Alias er et sjovt og tempofyldt holdspil, hvor man skal forklare så mange ord som muligt uden at sige selve ordene, mens holdkammeraterne gætter med.",
-        minute: 45,
+        minutter: 45,
         category: "selskabsspil",
         rating: 4,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -60,7 +60,7 @@ const products = [
         id: 6,
         title: "Spillekort",
         description: "Spillekort er et klassisk kortspil, hvor man kan spille mange forskellige spil med venner og familie, fra simple kortlege til strategiske spil.",
-        minute: 90,
+        minutter: 90,
         category: "kortspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -71,7 +71,7 @@ const products = [
         id: 7,
         title: "Terninger",
         description: "Terninger er et klassisk spiltilbehør, der kan bruges til mange forskellige spil, hvor man slår med terningerne og lader heldet afgøre næste træk.",
-        minute: 90,
+        minutter: 90,
         category: "selskabsspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -82,7 +82,7 @@ const products = [
         id: 8,
         title: "UNO",
         description: "UNO er et sjovt kortspil, hvor man skal komme af med sine kort ved at matche farver og tal, og være den første til at slippe af med alle sine kort.",
-        minute: 30,
+        minutter: 30,
         category: "kortspil",
         rating: 4,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -93,7 +93,7 @@ const products = [
         id: 9,
         title: "Ligretto",
         description: "Ligretto er et hurtigt og underholdende kortspil, hvor alle spiller på samme tid og forsøger at komme af med deres kort hurtigst muligt ved at lægge dem i nummerorden.",
-        minute: 15,
+        minutter: 15,
         category: "kortspil",
         rating: 3,
         player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -103,7 +103,7 @@ const products = [
         id: 10,
         title: "Flip 7",
         description: "Flip 7 er et sjovt og nervepirrende kortspil, hvor man trækker kort og forsøger at samle forskellige tal uden at trække det samme tal to gange.",
-        minute: 20,
+        minutter: 20,
         category: "kortspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -113,7 +113,7 @@ const products = [
         id: 11,
         title: "The mind",
         description: "The Mind er et anderledes og samarbejdsbaseret kortspil, hvor man uden at tale sammen skal lægge sine kort i den rigtige rækkefølge fra lavest til højest.",
-        minute: 20,
+        minutter: 20,
         category: "kortspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -123,7 +123,7 @@ const products = [
         id: 12,
         title: "Trivial Pursuit",
         description: "Trivial Pursuit er et underholdende quizspil, hvor man tester sin almenviden i forskellige kategorier og samler brikker ved at svare rigtigt på spørgsmål.",
-        minute: 60,
+        minutter: 60,
         category: "quizspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -133,7 +133,7 @@ const products = [
         id: 13,
         title: "Azul",
         description: "Azul er et strategisk brætspil, hvor man samler farverige fliser og placerer dem på sit spillebræt for at skabe flotte mønstre og samle flest point.",
-        minute: 30,
+        minutter: 30,
         category: "strategispil",
         rating: 5,
         player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -143,7 +143,7 @@ const products = [
         id: 14,
         title: "Det dårlige selskab",
         description: "Det Dårlige Selskab er et humoristisk selskabsspil, hvor man skal færdiggøre sætninger med sjove, skæve og ofte upassende svar.",
-        minute: 45,
+        minutter: 45,
         category: "selskabsspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -154,7 +154,7 @@ const products = [
         id: 15,
         title: "Hitster",
         description: "Hitster er et sjovt musikspil, hvor man skal gætte, hvornår forskellige sange er udgivet, og placere dem i den rigtige rækkefølge på en tidslinje.",
-        minute: 30,
+        minutter: 30,
         category: "quizspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -165,7 +165,7 @@ const products = [
         id: 16,
         title: "Hint",
         description: "Hint er et sjovt tegne- og gættespil, hvor man skal tegne, mime eller give ledetråde, så ens hold kan gætte de rigtige ord.",
-        minute: 45,
+        minutter: 45,
         category: "selskabsspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -175,7 +175,7 @@ const products = [
         id: 17,
         title: "Codenames",
         description: "Codenames er et sjovt holdspil, hvor man giver hints med ét ord for at få sit hold til at gætte de rigtige ord på spillepladen uden at ramme modstanderens agenter.",
-        minute: 15,
+        minutter: 15,
         category: "selskabsspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -186,7 +186,7 @@ const products = [
         id: 18,
         title: "Tegn & Gæt",
         description: "Tegn & Gæt er et sjovt selskabsspil, hvor man skal tegne forskellige ord og få sine holdkammerater til at gætte, hvad man forestiller.",
-        minute: 45,
+        minutter: 45,
         category: "selskabsspil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -197,7 +197,7 @@ const products = [
         id: 19,
         title: "Risk",
         description: "Risk er et strategisk brætspil, hvor man kæmper om verdensherredømmet ved at opbygge hære, erobre territorier og besejre sine modstandere.",
-        minute: 90,
+        minutter: 90,
         category: "strategispil",
         rating: 5,
         player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -208,7 +208,7 @@ const products = [
         id: 20,
         title: "Catan",
         description: "Catan er et strategisk brætspil, hvor man samler ressourcer, bygger veje og byer og konkurrerer om at udvikle den bedste bosættelse.",
-        minute: 60,
+        minutter: 60,
         category: "strategispil",
         rating: 5,
         player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
@@ -219,7 +219,7 @@ const products = [
         id: 21,
         title: "Skak",
         description: "Skak er et klassisk strategisk brætspil for to personer, hvor man med forskellige brikker forsøger at sætte modstanderens konge skakmat.",
-        minute: 30,
+        minutter: 30,
         category: "strategispil",
         rating: 5,
         player: "to", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/

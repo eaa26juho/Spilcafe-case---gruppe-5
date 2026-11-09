@@ -276,13 +276,13 @@ header h1 {
 }
 
 /* Minutter range */
-.minute-range {
+.minutter-range {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.minute-input {
+.minutter-input {
     padding: 10px 15px;
     border: 1px solid var(--læs_mere_knap);
     border-radius: 20px;
@@ -291,7 +291,7 @@ header h1 {
     transition: var(--transition);
 }
 
-.minute-separator {
+.minutter-separator {
     color: var(--dark-gray);
     font-weight: bold;
 }
