@@ -7,14 +7,11 @@ const products = [
         description: "Et strategisk brætspil, hvor samarbejde og taktik går hånd i hånd. Spil sammen med din makker, få alle dine brikker sikkert i mål, og prøv at læse både modstandernes og makkerens næste træk. Perfekt til spillere, der nyder klassisk strategi med et socialt twist.",
         minutter: 60, /*Dette er de rigtige antal minutter*/
         category: "Brætspil",
-<<<<<<< HEAD
         players: "4 personer",
         rating: 4,
         color: "sort",
-=======
         rating: 4,
         players: "sort",
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         image: "billeder_spiloversigt/spil_partners.svg"
     },
     {
@@ -45,12 +42,9 @@ const products = [
         description: "Moderne designerstol i ægte læder, perfekt til stuen.",
         minutter: 30,
         category: "Brætspil",
-<<<<<<< HEAD
         players: "2-8 personer",
         rating: 5,
-=======
         rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_sequence.svg"
     },
@@ -82,12 +76,9 @@ const products = [
         description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
         minutter: 90,
         category: "Selskabsspil",
-<<<<<<< HEAD
         players: "2-8 personer",
         rating: 3,
-=======
         rating: 5,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "blå",
         image: "billeder_spiloversigt/spil_terninger.svg"
     },
@@ -97,12 +88,9 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Kortspil",
-<<<<<<< HEAD
         players: "2-8 personer",
         rating: 5,
-=======
         rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_uno.svg"
     },
@@ -112,12 +100,9 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 15,
         category: "Kortspil",
-<<<<<<< HEAD
         players: "2-4 personer",
         rating: 5,
-=======
         rating: 3,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_ligretto.svg"
     }, {
@@ -126,12 +111,8 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 20,
         category: "Kortspil",
-<<<<<<< HEAD
         players: "2-8 personer",
         rating: 5,
-=======
-        rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_flip_7.svg"
     }, {
@@ -150,12 +131,8 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 60,
         category: "Quizspil",
-<<<<<<< HEAD
         players: "2-6 personer",
         rating: 5,
-=======
-        rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_trivial_pursuit.svg"
     }, {
@@ -217,12 +194,8 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 45,
         category: "Selskabsspil",
-<<<<<<< HEAD
         players: "4-8 personer",
         rating: 5,
-=======
-        rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_tegn_og_gaet.svg"
     },
@@ -232,12 +205,8 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 90,
         category: "Strategispil",
-<<<<<<< HEAD
         players: "2-6 personer",
         rating: 5,
-=======
-        rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_risk.svg"
     },
@@ -258,12 +227,8 @@ const products = [
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         minutter: 30,
         category: "Strategispil",
-<<<<<<< HEAD
         players: "2 personer",
         rating: 5,
-=======
-        rating: 4,
->>>>>>> 22382f306d7f813468900d9f9cc44163cf6cab8e
         color: "brun",
         image: "billeder_spiloversigt/spil_skak.svg"
     }
