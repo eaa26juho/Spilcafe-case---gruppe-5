@@ -24,7 +24,7 @@ const products = [
         rating: 4,
         players: "hvid",
         image: "billeder_spiloversigt/spil_bezzerwizzer.svg"
-    },
+    }, 
     {
         id: 3,
         title: "Matador",
