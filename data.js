@@ -25,7 +25,7 @@ const products = [
         category: "Quizspil",
         players: "2-8 personer",
         rating: 4,
-        color: "hvid",
+        players: "hvid",
         image: "billeder_spiloversigt/spil_bezzerwizzer.svg"
     },
     {
