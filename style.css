@@ -58,15 +58,17 @@ header {
 header h1 {
     font-family: 'Jomhuria', cursive;
     color: var(--spilhjørnet);
-    font-size: 5rem;
+    font-size: 100px;
     font-weight: normal;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
+    margin-top: 25px;
 }
 
 /* Logo */
 .logo {
-    width: 100px;
+    width: 80px;
     height: auto;
+    margin-left: -1300px;
 }
 
 .dice-divider {
@@ -696,4 +698,14 @@ dialog::backdrop {
     font-family: 'josefin-sans', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
+}
+
+fieldset.filter-group {
+    border: none;
+    min-inline-size: 0;
+    padding: 0;
+}
+
+legend.filter-label {
+    padding: 0;
 }

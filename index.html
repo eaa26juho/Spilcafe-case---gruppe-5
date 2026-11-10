@@ -1,191 +1,193 @@
-<DOCTYPE html>
-    <html lang="da">
+<!DOCTYPE html>
+<html lang="da">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/svg+xml" href="favicon/favicon_terning.svg">
-        <title>Spilhjørnet</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon_terning.svg">
+    <title>Spilhjørnet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <div class="container">
-            <header>
-                <img src="logo/logo_terning.svg" alt="SpilCafe logo" class="logo">
-                <h1>Spiloversigt</h1>
-                <img src="ikoner/terninge_design.svg" alt="Dekorativ række af terninger" class="dice-divider" </header>
-                <main>
-                    <div class="search-container">
-                        <input type="search" id="search-input" placeholder="Søg efter spil..." class="search-input">
-                        <button class="recommended-button">
-                            <img src="ikoner//ai_knap.svg" alt="Anbefalet ikon">
-                            Anbefalet
-                        </button>
-                        <select id="predefined-search" class="predefined-select">
-                            <option value="">Sorter efter</option>
-                            <option value="populaere">Mest populære</option>
-                            <option value="minutter-stigende">Spilletid: Lav til høj</option>
-                            <option value="minutter-faldende">Spilletid: Høj til lav</option>
-                        </select>
-                        <button id="filter-toggle" class="filter-button">
-                            <img src="ikoner/filter_knap.svg" alt="" Filter ikon">
-                            <span>Filtrer</span>
-                        </button>
-                    </div>
-                    <div id="filter-panel" class="filter-panel">
-                        <div class="filter-header">
-                            <h2>Filtrer Produkter</h2>
-                            <button id="close-filter" class="close-button">&times;</button>
-                        </div>
-                        <div class="filter-content">
-                            <div class="filter-group">
-                                <label class="filter-label">Kategori</label>
-                                <div class="checkbox-group">
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="category" value="brætspil"> Brætspil
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="category" value="quizspil"> Quizspil
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="category" value="kortspil"> Kortspil
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="category" value="strategispil"> Strategispil
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="category" value="selskabsspil"> Selskabsspil
-                                    </label>
-                                </div>
-                            </div>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo/logo_terning.svg" alt="SpilCafe logo" class="logo">
+            <h1>SPILOVERSIGT</h1>
+            <img src="ikoner/terninge_design.svg" alt="" class="dice-divider">
+        </header>
 
-                            
-                            <div class="filter-group">
-                                <label class="filter-label">Spilletid</label>
-                                <div class="checkbox-group">
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="minutter" value="15"> 0-15 min
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="minutter" value="30"> 30 min
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="minutter" value="45"> 45 min
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="minutter" value="60"> 60 min
-                                    </label>
-                                    <label class="checkbox-label">
-                                        <input type="checkbox" name="minutter" value="over60"> Over 60+ min
-                                    </label>
-                                </div>
-                            </div>
-                            
+        <main>
+            <section class="search-container">
+                <input type="search" id="search-input" placeholder="Søg efter spil..." class="search-input">
+                <button type="button" class="recommended-button">
+                    <img src="ikoner/ai_knap.svg" alt="">
+                    Anbefalet
+                </button>
+                <select id="predefined-search" class="predefined-select">
+                    <option value="">Sorter efter</option>
+                    <option value="populaere">Mest populære</option>
+                    <option value="minutter-stigende">Spilletid: Lav til høj</option>
+                    <option value="minutter-faldende">Spilletid: Høj til lav</option>
+                </select>
+                <button type="button" id="filter-toggle" class="filter-button">
+                    <img src="ikoner/filter_knap.svg" alt="">
+                    <span>Filtrer</span>
+                </button>
+            </section>
 
-                            <!---   SLETTES-->
-                            <div class="filter-group">
-                                <label class="filter-label">Spilletid</label>
-                                <div class="minutter-range">
-                                    <input type="number" id="min-minutter" placeholder="Minimum antal minutter"
-                                        class="minutter-input">
-                                    <span class="minutter-separator">-</span>
-                                    <input type="number" id="max-minutter" placeholder="Max antal minutter"
-                                        class="minutter-input">
-                                </div>
-                            </div>
-
-
-                            <!---   SLETTES-->
-                            <div class="filter-group">
-                                <label class="filter-label">Vurdering</label>
-                                <div class="rating-group">
-                                    <label class="rating-label">
-                                        <input type="radio" name="rating" value="5"> ★★★★★
-                                    </label>
-                                    <label class="rating-label">
-                                        <input type="radio" name="rating" value="4"> ★★★★
-                                    </label>
-                                    <label class="rating-label">
-                                        <input type="radio" name="rating" value="3"> ★★★
-                                    </label>
-                                    <label class="rating-label">
-                                        <input type="radio" name="rating" value="2"> ★★
-                                    </label>
-                                    <label class="rating-label">
-                                        <input type="radio" name="rating" value="1"> ★
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="filter-group">
-                                <label class="filter-label">Spillere</label>
-                                <div class="player-group">
-                                    <label class="player-label">
-                                        <input type="checkbox" name="player" value="to"> 2 spillere
-                                    </label>
-                                    <label class="player-label">
-                                        <input type="checkbox" name="player" value="tre"> 3 spillere
-                                    </label>
-                                    <label class="player-label">
-                                        <input type="checkbox" name="player" value="fire"> 4 spillere
-                                    </label>
-                                    <label class="player-label">
-                                        <input type="checkbox" name="player" value="fem"> 5 spillere
-                                    </label>
-                                    <label class="player-label">
-                                        <input type="checkbox" name="player" value="merefem"> 5+ spillere
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="filter-footer">
-                            <button id="apply-filters" class="apply-button">Vis Produkter</button>
-                        </div>
-                    </div>
-                    <div id="products-container" class="products-container">
-                    </div>
-
-
-                </main>
-                <img src="ikoner/terninge_design.svg" alt="Dekorativ række af terninger" class="footer-divider" </header>
-
-                <footer>
-                    <div class="footer-information">
-                        <h3>Følg os på</h3>
-                        <img src="ikoner/some_knap.svg" alt="Dekorativ ikon" class="footer-icon">
-                        <div class="footer-links">
-                            <p>Privatliv </p>
-                            <p>Kontrolrapport: Sønderhøj 30, 8260 Aarhus</p>
-                        </div>
-                    </div>
-                    <p class="copyright"></p>
-                    <p>Kontakt os: <a href="mailto:info@spilhjørnet.dk">info@spilhjørnet.dk</a></p>
-                    <p>&copy; Spilhjørnet ApS 2026 All rights reserved</p>
-                </footer>
-        </div>
-        <dialog id="product-dialog">
-            <article class="dialog-content">
-                <img id="dialog-image" src="" alt="" class="product-image">
-                <h2 id="dialog-title"></h2>
-                <p id="dialog-description"></p>
-                <div class="product-meta">
-                    <span id="dialog-minutter" class="product-minutter"></span>
-                    <span id="dialog-category" class="product-category"></span>
+            <aside id="filter-panel" class="filter-panel" aria-label="Filtrer spil">
+                <div class="filter-header">
+                    <h2>Filtrer Produkter</h2>
+                    <button type="button" id="close-filter" class="close-button" aria-label="Luk filtrering">&times;</button>
                 </div>
-                <div id="dialog-rating" class="product-rating"></div>
-                <menu class="dialog-actions">
-                    <button id="dialog-close" value="cancel">Luk</button>
-                </menu>
-            </article>
-        </dialog>
-        <div id="overlay" class="overlay"></div>
-        <script src="data.js"></script>
-        <script src="scriptui.js"></script>
-        <script src="scriptfiltrering.js"></script>
 
-    </body>
+                <div class="filter-content">
+                    <fieldset class="filter-group">
+                        <legend class="filter-label">Kategori</legend>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="brætspil"> Brætspil
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="quizspil"> Quizspil
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="kortspil"> Kortspil
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="strategispil"> Strategispil
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="selskabsspil"> Selskabsspil
+                            </label>
+                        </div>
+                    </fieldset>
 
-    </html>
+                    <fieldset class="filter-group">
+                        <legend class="filter-label">Spilletid</legend>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="minutter" value="15"> 0-15 min
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="minutter" value="30"> 30 min
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="minutter" value="45"> 45 min
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="minutter" value="60"> 60 min
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="minutter" value="over60"> Over 60+ min
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- SLETTES (hvis I fjerner den, så fjern også min/max-linjerne i scriptfiltrering.js) -->
+                    <fieldset class="filter-group">
+                        <legend class="filter-label">Spilletid (selvvalgt)</legend>
+                        <div class="minutter-range">
+                            <input type="number" id="min-minutter" placeholder="Minimum antal minutter"
+                                class="minutter-input">
+                            <span class="minutter-separator">-</span>
+                            <input type="number" id="max-minutter" placeholder="Max antal minutter"
+                                class="minutter-input">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend class="filter-label">Vurdering</legend>
+                        <div class="rating-group">
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="5"> ★★★★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="4"> ★★★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="3"> ★★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="2"> ★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="1"> ★
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter-group">
+                        <legend class="filter-label">Spillere</legend>
+                        <div class="player-group">
+                            <label class="player-label">
+                                <input type="checkbox" name="player" value="to"> 2 spillere
+                            </label>
+                            <label class="player-label">
+                                <input type="checkbox" name="player" value="tre"> 3 spillere
+                            </label>
+                            <label class="player-label">
+                                <input type="checkbox" name="player" value="fire"> 4 spillere
+                            </label>
+                            <label class="player-label">
+                                <input type="checkbox" name="player" value="fem"> 5 spillere
+                            </label>
+                            <label class="player-label">
+                                <input type="checkbox" name="player" value="merefem"> 5+ spillere
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filter-footer">
+                    <button type="button" id="apply-filters" class="apply-button">Vis Produkter</button>
+                </div>
+            </aside>
+
+            <section id="products-container" class="products-container" aria-label="Spiloversigt">
+            </section>
+        </main>
+
+        <img src="ikoner/terninge_design.svg" alt="" class="footer-divider">
+
+        <footer>
+            <div class="footer-information">
+                <h3>Følg os på</h3>
+                <img src="ikoner/some_knap.svg" alt="Sociale medier" class="footer-icon">
+                <div class="footer-links">
+                    <p>Privatliv</p>
+                    <p>Kontrolrapport: Sønderhøj 30, 8260 Aarhus</p>
+                </div>
+            </div>
+            <p class="copyright"></p>
+            <p>Kontakt os: <a href="mailto:info@spilhjørnet.dk">info@spilhjørnet.dk</a></p>
+            <p>&copy; Spilhjørnet ApS 2026 All rights reserved</p>
+        </footer>
+    </div>
+
+    <dialog id="product-dialog">
+        <article class="dialog-content">
+            <img id="dialog-image" src="" alt="" class="product-image">
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+            <div class="product-meta">
+                <span id="dialog-minutter" class="product-minutter"></span>
+                <span id="dialog-category" class="product-category"></span>
+            </div>
+            <div id="dialog-rating" class="product-rating"></div>
+            <menu class="dialog-actions">
+                <li><button type="button" id="dialog-close" value="cancel">Luk</button></li>
+            </menu>
+        </article>
+    </dialog>
+
+    <div id="overlay" class="overlay"></div>
+
+    <script src="data.js"></script>
+    <script src="scriptui.js"></script>
+    <script src="scriptfiltrering.js"></script>
+</body>
+
+</html>

@@ -38,7 +38,7 @@ function displayProducts(productsToDisplay) {
 
      <span class="tag">
         <img src="spilkort_ui/antal_spillere_ikon.svg" alt="">
-        ${product.players}
+        ${product.spillere}
      </span>
     </div>
 
