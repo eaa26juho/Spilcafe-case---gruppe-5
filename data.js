@@ -19,7 +19,7 @@ const products = [
         minutter: 45,
         category: "quizspil",
         rating: 4,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players:"2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_bezzerwizzer.svg"
     }, 
@@ -30,7 +30,7 @@ const products = [
         minutter: 90,
         category: "brætspil",
         rating: 4,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-6 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_matador.svg"
     },
@@ -41,7 +41,7 @@ const products = [
         minutter: 30,
         category: "brætspil",
         rating: 4,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_sequence.svg"
     },
@@ -52,7 +52,7 @@ const products = [
         minutter: 45,
         category: "selskabsspil",
         rating: 4,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_alias.svg"
     },
@@ -63,7 +63,7 @@ const products = [
         minutter: 90,
         category: "kortspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_spillekort.svg"
     },
@@ -74,7 +74,7 @@ const products = [
         minutter: 90,
         category: "selskabsspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_terninger.svg"
     },
@@ -85,7 +85,7 @@ const products = [
         minutter: 30,
         category: "kortspil",
         rating: 4,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_uno.svg"
     },
@@ -96,7 +96,7 @@ const products = [
         minutter: 15,
         category: "kortspil",
         rating: 3,
-        player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-4 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_ligretto.svg"
     }, {
@@ -106,7 +106,7 @@ const products = [
         minutter: 20,
         category: "kortspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_flip_7.svg"
     }, {
@@ -116,7 +116,7 @@ const products = [
         minutter: 20,
         category: "kortspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-6 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_the_mind.svg"
     }, {
@@ -126,7 +126,7 @@ const products = [
         minutter: 60,
         category: "quizspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-6 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_trivial_pursuit.svg"
     }, {
@@ -136,7 +136,7 @@ const products = [
         minutter: 30,
         category: "strategispil",
         rating: 5,
-        player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-4 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_azul.svg"
     }, {
@@ -146,7 +146,7 @@ const products = [
         minutter: 45,
         category: "selskabsspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "3-6 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_det_daarlige_selskab.svg"
     },
@@ -157,7 +157,7 @@ const products = [
         minutter: 30,
         category: "quizspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to","tre","fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_hitster.svg"
     },
@@ -168,7 +168,7 @@ const products = [
         minutter: 45,
         category: "selskabsspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "4-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_hint.svg"
     }, {
@@ -178,7 +178,7 @@ const products = [
         minutter: 15,
         category: "selskabsspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "4-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_codenames.svg"
     },
@@ -189,7 +189,7 @@ const products = [
         minutter: 45,
         category: "selskabsspil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "4-8 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_tegn_og_gaet.svg"
     },
@@ -200,7 +200,7 @@ const products = [
         minutter: 90,
         category: "strategispil",
         rating: 5,
-        player: "merefem", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["to", "tre", "fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "2-6 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_risk.svg"
     },
@@ -211,7 +211,7 @@ const products = [
         minutter: 60,
         category: "strategispil",
         rating: 5,
-        player: "fire", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
+        player: ["tre", "fire", "fem", "merefem"], /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         players: "3-4 per.", /*KIG KOMMENTAR VED FØRSTE PRODUCT*/
         image: "billeder_spiloversigt/spil_catan.svg"
     },

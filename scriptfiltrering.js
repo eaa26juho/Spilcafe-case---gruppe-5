@@ -20,7 +20,10 @@ function filtrerProdukter() {
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
     //-------Filtrér på kategori, farve, minutter, rating------//
     if (categories.length > 0) {
-        filteredProducts = filteredProducts.filter(product => categories.includes(product.category)
+        filteredProducts = filteredProducts.filter(product => 
+            product.players.some(player =>
+                players.includes(player)
+            )
         );
     }
     if (minutter.length > 0) {
