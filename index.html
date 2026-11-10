@@ -162,23 +162,21 @@
             <p>&copy; Spilhjørnet ApS 2026 All rights reserved</p>
         </footer>
     </div>
-
     <dialog id="product-dialog">
         <article class="dialog-content">
             <img id="dialog-image" src="" alt="" class="product-image">
-            <h2 id="dialog-title"></h2>
+            <h2 id="dialog-title"></h2> <!-- Dialogboksens overskrift genereres dynamisk via JavaScript. Derfor registrerer HTML-validatoren en advarsel om en tom overskrift i den statiske HTML-fil. -->
             <p id="dialog-description"></p>
             <div class="product-meta">
                 <span id="dialog-minutter" class="product-minutter"></span>
                 <span id="dialog-category" class="product-category"></span>
             </div>
             <div id="dialog-rating" class="product-rating"></div>
-            <menu class="dialog-actions">
-                <li><button type="button" id="dialog-close" value="cancel">Luk</button></li>
-            </menu>
+            <div class="dialog-actions">
+                <button type="button" id="dialog-close" value="cancel">Luk</button>
+            </div>
         </article>
     </dialog>
-
     <div id="overlay" class="overlay"></div>
 
     <script src="data.js"></script>

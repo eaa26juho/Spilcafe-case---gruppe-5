@@ -83,7 +83,6 @@ header h1 {
     width: 100%;
     height: auto;
     padding-top: 40px;
-    padding-bottom: none;
 
 }
 
@@ -214,6 +213,7 @@ header h1 {
 
 .filter-header h2 {
     font-size: 1.8rem;
+    font-weight: 100;
 }
 
 .close-button {
@@ -251,7 +251,7 @@ header h1 {
 
 .filter-label {
     display: block;
-    font-weight: 600;
+    font-weight: 100;
     margin-bottom: 10px;
     color: var(--primary-color);
     font-size: 1.3rem;
@@ -525,7 +525,7 @@ header h1 {
 footer {
     text-align: center;
     padding: 40px 40px;
-    margin-top: none;
+    /* margin-top: none;*/
     /*  border-top: 2px solid var(--medium-gray);*/
     color: var(--spilnavn);
     letter-spacing: 2px;
@@ -575,7 +575,7 @@ dialog::backdrop {
 
 /* Popup dialog indhold */
 .dialog-content h2 {
-    margin-bottom: none;
+    /*margin-bottom: none;*/
     font-size: 3rem;
     color: var(--spilhjørnet);
     font-family: 'jomhuria', sans-serif;
